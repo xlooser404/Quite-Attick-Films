@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{182FA773-F8F7-4987-BAD9-A0D037D65D4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quite_Attick_Films</RootNamespace>
+    <AssemblyName>Quite-Attick-Films</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Design">
+      <HintPath>E:\softwares\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>E:\softwares\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>E:\softwares\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>E:\softwares\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>E:\softwares\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>E:\softwares\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Employee Panel Pages\empClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Panel Pages\empClient.Designer.cs">
+      <DependentUpon>empClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Panel Pages\empOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Panel Pages\empOrders.Designer.cs">
+      <DependentUpon>empOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Panel Pages\empPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Panel Pages\empPayment.Designer.cs">
+      <DependentUpon>empPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Panel Pages\empProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Panel Pages\empProperty.Designer.cs">
+      <DependentUpon>empProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\SystemAuthUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\SystemAuthUsers.Designer.cs">
+      <DependentUpon>SystemAuthUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Location.Designer.cs">
+      <DependentUpon>Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Payments.Designer.cs">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\producers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\producers.Designer.cs">
+      <DependentUpon>producers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Productions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Productions.Designer.cs">
+      <DependentUpon>Productions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Property.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\Property.Designer.cs">
+      <DependentUpon>Property.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Panel Pages\staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Panel Pages\staff.Designer.cs">
+      <DependentUpon>staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmloyeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmloyeeLogin.Designer.cs">
+      <DependentUpon>EmloyeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDashboard.Designer.cs">
+      <DependentUpon>EmployeeDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginSelection.Designer.cs">
+      <DependentUpon>LoginSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Employee Panel Pages\empClient.resx">
+      <DependentUpon>empClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Panel Pages\empOrders.resx">
+      <DependentUpon>empOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Panel Pages\empPayment.resx">
+      <DependentUpon>empPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Panel Pages\empProperty.resx">
+      <DependentUpon>empProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\SystemAuthUsers.resx">
+      <DependentUpon>SystemAuthUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\Location.resx">
+      <DependentUpon>Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\Payments.resx">
+      <DependentUpon>Payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\producers.resx">
+      <DependentUpon>producers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\Productions.resx">
+      <DependentUpon>Productions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\Property.resx">
+      <DependentUpon>Property.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Panel Pages\staff.resx">
+      <DependentUpon>staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmloyeeLogin.resx">
+      <DependentUpon>EmloyeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDashboard.resx">
+      <DependentUpon>EmployeeDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginSelection.resx">
+      <DependentUpon>LoginSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Mobile_login_re_9ntv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 With Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Photo_session_re_c0cp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Programming_re_kg9v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Pay_online_re_aqe6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Selecting_team_re_ndkb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Add_to_cart_re_wrdo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_printing_invoices_5r4r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_OS_upgrade_re_r0qa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film-reel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
