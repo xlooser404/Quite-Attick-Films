@@ -553,7 +553,7 @@
             this.txtSearch.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.txtSearch.TabIndex = 60;
-            this.txtSearch.Text = "Type Production Code";
+            this.txtSearch.Text = "Type NiC";
             // 
             // btnBack
             // 

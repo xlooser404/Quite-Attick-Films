@@ -90,7 +90,7 @@ namespace Quite_Attick_Films.Pages
                 Connection.Open();
 
                 // Create SQL command with parameters
-                using (SqlCommand cmd = new SqlCommand("INSERT INTO EmployeeTbl (SELECT StaffName, StaffEmail, StaffContact, StaffCode, StaffDepartment, Salary) VALUES (@staName, @staEmail, @staCode, @staDepa, @staSalery, @staContact)", Connection))
+                using (SqlCommand cmd = new SqlCommand("INSERT INTO StaffTbl (StaffName, StaffEmail, StaffContact, StaffCode, StaffDepartment, Salary) VALUES (@staName, @staEmail, @staCode, @staDepa, @staSalery, @staContact)", Connection))
                 {
                     // Add parameters with appropriate data types
                     cmd.Parameters.AddWithValue("@staName", txtName.Text);
@@ -148,7 +148,7 @@ namespace Quite_Attick_Films.Pages
                 Connection.Open();
 
                 // Create SQL command with parameter
-                using (SqlCommand cmd = new SqlCommand("DELETE FROM EmployeeTbl WHERE StaffCode = @empNIC", Connection))
+                using (SqlCommand cmd = new SqlCommand("DELETE FROM StaffTbl WHERE StaffCode = @empNIC", Connection))
                 {
                     // Add parameter with appropriate data type
                     cmd.Parameters.Add("@staCode", SqlDbType.VarChar).Value = staCode;
@@ -223,7 +223,7 @@ namespace Quite_Attick_Films.Pages
                 Connection.Open();
 
                 // Create SQL command with parameters
-                using (SqlCommand cmd = new SqlCommand("UPDATE EmployeeTbl SET StaffName = @staName, StaffEmail = @staEmail, StaffContact = @staContact, StaffDepartment = @staDepa, Salary = @staSalery WHERE StaffCode = @staCode", Connection))
+                using (SqlCommand cmd = new SqlCommand("UPDATE StaffTbl SET StaffName = @staName, StaffEmail = @staEmail, StaffContact = @staContact, StaffDepartment = @staDepa, Salary = @staSalery WHERE StaffCode = @staCode", Connection))
                 {
                     // Add parameters with appropriate data types
                     cmd.Parameters.AddWithValue("@staName", txtName.Text);

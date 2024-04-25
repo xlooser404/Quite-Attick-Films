@@ -467,8 +467,11 @@
             // 
             this.Ordtype.DropDownWidth = 236;
             this.Ordtype.Items.AddRange(new object[] {
-            "Indoor ",
-            "Outdoor"});
+            "Intro",
+            "Loop Video",
+            "Short Film",
+            "Film",
+            "Visual Song"});
             this.Ordtype.Location = new System.Drawing.Point(70, 348);
             this.Ordtype.Name = "Ordtype";
             this.Ordtype.Size = new System.Drawing.Size(250, 34);

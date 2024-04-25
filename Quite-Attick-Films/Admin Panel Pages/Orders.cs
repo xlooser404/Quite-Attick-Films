@@ -224,7 +224,7 @@ namespace Quite_Attick_Films.Pages
                 Connection.Open();
 
                 // Create SQL command with parameters       
-                using (SqlCommand cmd = new SqlCommand("UPDATE EmployeeTbl SET OrderName = @OrdName, OrderPrice = @OrdPrice, ClientNIC = @CLINic, Description = @OrdDescript, OrderType = @OrdType WHERE OrderCode = @OrdCode", Connection))
+                using (SqlCommand cmd = new SqlCommand("UPDATE OrderTbl SET OrderName = @OrdName, OrderPrice = @OrdPrice, ClientNIC = @CLINic, Description = @OrdDescript, OrderType = @OrdType WHERE OrderCode = @OrdCode", Connection))
                 {
                     // Add parameters with appropriate data types
                     cmd.Parameters.AddWithValue("@OrdName", txtOrdName.Text);

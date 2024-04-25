@@ -34,6 +34,7 @@ namespace Quite_Attick_Films
             Connection.Close();
             if (dt.Rows.Count > 0)
             {
+                MessageBox.Show("Login Successfull");
                 this.Hide();
                 AdminDashboard adminDashboard = new AdminDashboard();
                 adminDashboard.Show();

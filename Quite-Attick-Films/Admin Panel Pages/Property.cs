@@ -204,7 +204,7 @@ namespace Quite_Attick_Films.Pages
                 // Ensure a row is selected
                 if (PropertyDGV.SelectedRows.Count == 0)
                 {
-                    MessageBox.Show("Please select a Order to update.");
+                    MessageBox.Show("Please select a Property to update.");
                     return;
                 }
 
@@ -227,7 +227,7 @@ namespace Quite_Attick_Films.Pages
                 Connection.Open();
 
                 // Create SQL command with parameters
-                using (SqlCommand cmd = new SqlCommand("UPDATE EmployeeTbl SET PropertyName = @prpName, PurchasePrice = @purPrice, RentalPrice = @rntPrice, Description = @prpDescript, Status = @prpStatus, PurchaseDate = @purDate WHERE PropertyCode = @prpCode", Connection))
+                using (SqlCommand cmd = new SqlCommand("UPDATE PropertyTbl SET PropertyName = @prpName, PurchasePrice = @purPrice, RentalPrice = @rntPrice, Description = @prpDescript, Status = @prpStatus, PurchaseDate = @purDate WHERE PropertyCode = @prpCode", Connection))
                 {
                     // Add parameters with appropriate data types
                     cmd.Parameters.AddWithValue("@prpName", txtName.Text);
@@ -242,7 +242,6 @@ namespace Quite_Attick_Films.Pages
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Property updated successfully!");
                 }
-
                 // Refresh the Property list display
                 PropertyList();
             }
@@ -256,7 +255,6 @@ namespace Quite_Attick_Films.Pages
                 // Close database connection even in case of errors
                 Connection.Close();
             }
-
             // Clear form fields for the next entry
             Clear_Data();
         }
